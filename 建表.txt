@@ -1,0 +1,15 @@
+CREATE TABLE weather
+	(
+	id int identity(1,1) primary key,
+	temp int,
+	day1date	nvarchar(max),
+	day1weather	nvarchar(max),
+	day1cloud	nvarchar(max),
+	day2date	nvarchar(max),
+	day2weather	nvarchar(max),
+	day2cloud	nvarchar(max),
+	day3date	nvarchar(max),
+	day3weather	nvarchar(max),
+	day3cloud	nvarchar(max),
+	_timestamp smalldatetime default getdate()           
+	)
